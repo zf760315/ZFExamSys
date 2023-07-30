@@ -3,10 +3,43 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:cmd="clr-namespace:Command;assembly=Command"
+        xmlns:vc="clr-namespace:ZFExamSys.Unity.Converters"
         xmlns:local="clr-namespace:ZFExamSys.Views"
         mc:Ignorable="d"
         Title="MainWindowView" Height="450" Width="800">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadCommand}"></i:InvokeCommandAction>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Window.Resources>
+        <ResourceDictionary>
+            <vc:ResourceTypeConverter x:Key="ResourceTypeConverter"></vc:ResourceTypeConverter>
+        </ResourceDictionary>
+    </Window.Resources>
     <Grid>
-        
+        <Grid Grid.Row="0" Grid.Column="1">
+            <ListView ItemsSource="{Binding Path=ResourceTypes}" Height="160">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <RadioButton GroupName="ResourceType" Content="{Binding Converter={StaticResource ResourceTypeConverter}}">
+                            <i:Interaction.Triggers>
+                                <i:EventTrigger EventName="Click">
+                                    <cmd:EventToCommand Command="{Binding ChangeResourceCommand}"/>
+                                </i:EventTrigger>
+                            </i:Interaction.Triggers>
+                        </RadioButton>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackPanel>
+                
+
+                <Button Click="Button_Click">字体测试</Button>
+            </StackPanel>
+            
+        </Grid>
     </Grid>
 </Window>

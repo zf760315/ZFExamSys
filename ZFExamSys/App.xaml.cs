@@ -22,7 +22,7 @@ namespace ZFExamSys
         //设置启动起始页
         protected override Window CreateShell()
         {
-            return Container.Resolve<MainView>();
+            return Container.Resolve<MainWindowView>();
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -35,6 +35,7 @@ namespace ZFExamSys
         protected override void ConfigureViewModelLocator()
         {
             base.ConfigureViewModelLocator();
+            ViewModelLocationProvider.Register<MainWindowView, MainWindowViewModel>();
             ViewModelLocationProvider.Register<MainView, MainViewModel>();
             ViewModelLocationProvider.Register<ImageView, ImageViewModel>();
             //ViewModelLocationProvider.Register(typeof(MainView).ToString(), typeof(MainViewViewModel));

@@ -8,15 +8,23 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Style/Colors.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Style/Global.xaml" />
+                <!--<ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Style/Themes/FIcon.xaml" />-->
+                <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Control/FButton.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Style/Style.xaml"/>
+                <!--<ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Control/WindowBase.xaml"/>-->
+            </ResourceDictionary.MergedDictionaries>
+            <!--<ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Style/Colors.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Style/Global.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Style/Themes/FIcon.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Control/FButton.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Style/Style.xaml"/>
                 <ResourceDictionary Source="pack://application:,,,/Util.Controls;component/Control/WindowBase.xaml"/>
-            </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary.MergedDictionaries>-->
 
-            <Style TargetType="{x:Type ScrollBar}" BasedOn="{StaticResource DefaultScrollBar}"></Style>
+            <!--<Style TargetType="{x:Type ScrollBar}" BasedOn="{StaticResource DefaultScrollBar}"></Style>
             <Style TargetType="{x:Type ScrollViewer}" BasedOn="{StaticResource DefaultScrollViewer}"></Style>
-            <!--<Style TargetType="{x:Type RichTextBox}" BasedOn="{StaticResource DefaultRichTextBox}"/>-->
+            --><!--<Style TargetType="{x:Type RichTextBox}" BasedOn="{StaticResource DefaultRichTextBox}"/>--><!--
 
             <Style TargetType="TextBox" BasedOn="{StaticResource DefaultTextBox}"></Style>
             <Style TargetType="CheckBox" BasedOn="{StaticResource DefaultCheckBox}"></Style>
@@ -30,7 +38,8 @@
             <Style TargetType="{x:Type DatePicker}" BasedOn="{StaticResource DefaultDatePicker}"></Style>
             <Style TargetType="{x:Type ListBox}" BasedOn="{StaticResource DefaultListBox}"></Style>
             <Style TargetType="{x:Type PasswordBox}" BasedOn="{StaticResource DefaultPasswordBox}"></Style>
-            <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource DefaultListView}"></Style>
+            <Style TargetType="{x:Type ListView}" BasedOn="{StaticResource DefaultListView}"></Style>-->
+            
         </ResourceDictionary>
     </Application.Resources>
 </prism:PrismApplication>

@@ -80,7 +80,7 @@
     <SolidColorBrush x:Key="SuccessfulfaiBrush" Color="#16B32A"></SolidColorBrush>
     <SolidColorBrush x:Key="FailedBrush" Color="#B92222"></SolidColorBrush>
 
-    <FontFamily x:Key="FontFamily" >Microsoft YaHei</FontFamily>
+    <FontFamily x:Key="FontFamily" >SimHei</FontFamily>
     <sys:Double x:Key="FontSize">13</sys:Double>
     <sys:Double x:Key="DisableOpacity">0.5</sys:Double>
     <sys:Double x:Key="ReadonlyOpacity">0.88</sys:Double>

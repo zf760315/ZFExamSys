@@ -24,5 +24,11 @@ namespace ZFExamSys.Views
         {
             InitializeComponent();
         }
+       
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            new MainView().Show();
+        }
     }
 }
