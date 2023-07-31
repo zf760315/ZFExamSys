@@ -54,7 +54,7 @@
             <StackPanel>
                 <StackPanel Orientation="Horizontal">
                     <Label Background="Red">淮南考试按考点统计数据：</Label>
-                    <Button Margin="3"  Command="{Binding OpenPicCommand}">Excel模板查看</Button>
+                    <xly:FButton Margin="3"  Command="{Binding OpenPicCommand}" Style="{StaticResource FButton_LinkButton}">Excel模板查看</xly:FButton>
                     <Button>
                         <i:Interaction.Triggers>
                             <i:EventTrigger EventName="Click">

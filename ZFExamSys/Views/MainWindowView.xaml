@@ -21,13 +21,13 @@
     </Window.Resources>
     <Grid>
         <Grid Grid.Row="0" Grid.Column="1">
-            <ListView ItemsSource="{Binding Path=ResourceTypes}" Height="160">
+            <ListView ItemsSource="{Binding Path=ResourceTypes}" Height="160" Style="{StaticResource NonSelectableAndMoveOverListView}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <RadioButton GroupName="ResourceType" Content="{Binding Converter={StaticResource ResourceTypeConverter}}">
                             <i:Interaction.Triggers>
                                 <i:EventTrigger EventName="Click">
-                                    <cmd:EventToCommand Command="{Binding ChangeResourceCommand}"/>
+                                    <cmd:EventToCommand Command="{Binding RelativeSource={RelativeSource AncestorType=Window, Mode=FindAncestor}, Path=DataContext.ChangeResourceCommand }"/>
                                 </i:EventTrigger>
                             </i:Interaction.Triggers>
                         </RadioButton>
@@ -35,8 +35,8 @@
                 </ListView.ItemTemplate>
             </ListView>
             <StackPanel>
-                
 
+                <RadioButton>123</RadioButton>
                 <Button Click="Button_Click">字体测试</Button>
             </StackPanel>
             

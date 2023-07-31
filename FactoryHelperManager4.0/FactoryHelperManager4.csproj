@@ -99,6 +99,7 @@
   <ItemGroup>
     <Compile Include="AccessOleDbHelper.cs" />
     <Compile Include="DirectoryHelper.cs" />
+    <Compile Include="EnumHelper.cs" />
     <Compile Include="ProcessHelper.cs" />
     <Compile Include="SerializableCtrl.cs" />
     <Compile Include="ShareHelper.cs" />
