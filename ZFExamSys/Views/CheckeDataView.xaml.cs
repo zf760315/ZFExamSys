@@ -10,24 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace ZFExamSys.Views
 {
     /// <summary>
-    /// MainWindow.xaml 的交互逻辑
+    /// CheckeDataView.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindowView : Window
+    public partial class CheckeDataView : Window
     {
-        public MainWindowView()
+        public CheckeDataView()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            new MainView().Show();
         }
     }
 }

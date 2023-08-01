@@ -96,7 +96,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Consts.cs" />
     <Compile Include="Enum\ResourceType.cs" />
+    <Compile Include="Models\PermissionModel.cs" />
+    <Compile Include="Models\RoleModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
     <Compile Include="Unity\Converters\ResourceTypeConverter.cs" />
     <Compile Include="UserControls\ImageControl.xaml.cs">
       <DependentUpon>ImageControl.xaml</DependentUpon>
@@ -104,6 +108,9 @@
     <Compile Include="ViewModels\ImageViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Compile Include="Views\CheckeDataView.xaml.cs">
+      <DependentUpon>CheckeDataView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ImageView.xaml.cs">
       <DependentUpon>ImageView.xaml</DependentUpon>
     </Compile>
@@ -113,6 +120,10 @@
     <Page Include="Themes\ThemesOne.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\CheckeDataView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MainWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
